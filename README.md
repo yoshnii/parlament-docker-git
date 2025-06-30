@@ -15,3 +15,5 @@ docker build -t parlament-r .
 
 #run image and output
 docker run --rm -v "$(pwd)":/app parlament-r
+
+#the final output would be plot.png
