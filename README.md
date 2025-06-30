@@ -9,7 +9,7 @@ This project runs an R script that creates a parliament-style plot using ggpol.
 ## Run the project
 
 ```bash
-why move
+
 #build docker image
 docker build -t parlament-r .
 
