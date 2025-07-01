@@ -14,6 +14,6 @@ This project runs an R script that creates a parliament-style plot using ggpol.
 docker build -t parlament-r .
 
 #run image and output
-docker run --rm -v "$(pwd)":/app parlament-r
+docker run --rm -v "$(pwd)/app":/app parlament-r
 
 #the final output would be plot.png
