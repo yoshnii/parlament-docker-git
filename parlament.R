@@ -1,3 +1,7 @@
+args <- commandArgs(trailingOnly = TRUE)
+ccp_color <- ifelse(length(args) >= 1, args[1], "#FF0000")
+cat("CCP color received:", ccp_color, "\n")
+
 library(ggpol)
 library(ggplot2)
 library(dplyr)
@@ -29,7 +33,7 @@ party_seats <- data.frame(
   ),
   seats  = c(2119, 64, 64, 57, 55, 54, 43, 13, 479),
   colors = c(
-    "#FF0000",  # red for CCP
+    ccp_color,  # dynamic color for CCP
     "#377eb8",
     "#4daf4a",
     "#984ea3",
